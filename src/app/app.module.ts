@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
+import { SharedModule } from 'primeng/api';
+import { MenubarModule } from 'primeng/menubar';
 
 import { LoginComponent } from './components/login/login.component';
 import { AppMenuComponent } from './components/app-menu/app-menu.component';
@@ -36,6 +38,8 @@ import { AppAccessDeniedComponent } from './components/app-access-denied/app-acc
     CheckboxModule,
     ButtonModule,
     InputTextModule,
+    MenubarModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
