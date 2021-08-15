@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-family: $fontFamily;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 640px) {
+}
