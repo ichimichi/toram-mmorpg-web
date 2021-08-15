@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mmorpg-online-clone": {
+    "toram-mmorpg-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mmorpg-online-clone",
+            "outputPath": "dist/toram-mmorpg-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mmorpg-online-clone:build:production"
+              "browserTarget": "toram-mmorpg-web:build:production"
             },
             "development": {
-              "browserTarget": "mmorpg-online-clone:build:development"
+              "browserTarget": "toram-mmorpg-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mmorpg-online-clone:build"
+            "browserTarget": "toram-mmorpg-web:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "mmorpg-online-clone"
+  "defaultProject": "toram-mmorpg-web"
 }
