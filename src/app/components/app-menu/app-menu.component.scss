@@ -1,20 +1,3 @@
 :host ::ng-deep .p-menubar {
   border: 0;
 }
-
-.app-name-end {
-  display: none;
-}
-
-@media (max-width: 1024px) {
-  .app-name-start {
-    display: none;
-  }
-
-  .app-name-end {
-    display: inherit;
-  }
-}
-
-@media (max-width: 640px) {
-}
