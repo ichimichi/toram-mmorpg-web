@@ -17,9 +17,9 @@ import { AppTopbarComponent } from './components/app-topbar/app-topbar.component
 import { AppMainComponent } from './components/app-main/app-main.component';
 import { AppFooterComponent } from './components/app-footer/app-footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { AppErrorComponent } from './components/app-error/app-error.component';
-import { AppNotFoundComponent } from './components/app-not-found/app-not-found.component';
-import { AppAccessDeniedComponent } from './components/app-access-denied/app-access-denied.component';
+import { AppErrorComponent } from './components/common-pages/app-error/app-error.component';
+import { AppNotFoundComponent } from './components/common-pages/app-not-found/app-not-found.component';
+import { AppAccessDeniedComponent } from './components/common-pages/app-access-denied/app-access-denied.component';
 import { ProductionComponent } from './components/character/production/production.component';
 import { BuildComponent } from './components/character/build/build.component';
 import { AchievementComponent } from './components/character/achievement/achievement.component';
