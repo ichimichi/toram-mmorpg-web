@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './app-menu.component.html',
@@ -23,14 +24,17 @@ export class AppMenuComponent implements OnInit {
               {
                 label: 'Production',
                 icon: 'pi pi-fw pi-plus',
+                routerLink: '/production',
               },
               {
                 label: 'Build Character',
                 icon: 'pi pi-fw pi-plus',
+                routerLink: '/build',
               },
               {
                 label: 'Achievement',
                 icon: 'pi pi-fw pi-plus',
+                routerLink: 'achievement',
               },
             ],
           },
@@ -124,6 +128,7 @@ export class AppMenuComponent implements OnInit {
       {
         label: 'Map',
         icon: 'pi pi-fw pi-map',
+        routerLink: '/map',
       },
       {
         label: 'Terminal',
@@ -364,6 +369,55 @@ export class AppMenuComponent implements OnInit {
           {
             label: 'Whisper History',
             icon: 'pi pi-fw pi-plus',
+          },
+        ],
+      },
+      {
+        label: 'Settings',
+        icon: 'pi pi-fw pi-cog',
+        items: [
+          {
+            label: 'Shortcuts',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Auto Item',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Chat',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'System',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Graphics',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Audio',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Character Name',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Reacquire Data',
+            icon: 'pi pi-fw pi-plus',
+          },
+          {
+            label: 'Account',
+            icon: 'pi pi-fw pi-plus',
+            items: [
+              {
+                label: 'Logout',
+                icon: 'pi pi-fw pi-sign-out',
+                routerLink: '/login',
+              },
+            ],
           },
         ],
       },

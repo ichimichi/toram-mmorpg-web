@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AppErrorComponent } from './components/app-error/app-error.component';
 import { AppNotFoundComponent } from './components/app-not-found/app-not-found.component';
 import { AppAccessDeniedComponent } from './components/app-access-denied/app-access-denied.component';
+import { ProductionComponent } from './components/character/production/production.component';
+import { BuildComponent } from './components/character/build/build.component';
+import { AchievementComponent } from './components/character/achievement/achievement.component';
+import { MapComponent } from './components/map/map.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +36,14 @@ import { AppAccessDeniedComponent } from './components/app-access-denied/app-acc
     AppErrorComponent,
     AppNotFoundComponent,
     AppAccessDeniedComponent,
+    ProductionComponent,
+    BuildComponent,
+    AchievementComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CheckboxModule,
     ButtonModule,
