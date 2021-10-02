@@ -1,16 +1,8 @@
 <p-menubar [model]="items">
   <ng-template pTemplate="start">
     <div
-      class="
-        app-name-start
-        text-900 text-2xl
-        font-medium
-        no-underline
-        m-3
-        cursor-pointer
-        hidden
-        lg:flex
-      "
+      class="text-900 text-2xl font-medium m-2 cursor-pointer hidden lg:flex"
+      routerLink="/"
     >
       Toram Online Web
     </div>
@@ -18,15 +10,8 @@
 
   <ng-template pTemplate="end">
     <div
-      class="
-        app-name-end
-        text-900 text-2xl
-        font-medium
-        no-underline
-        m-3
-        cursor-pointer
-        lg:hidden
-      "
+      class="text-900 text-2xl font-medium m-2 cursor-pointer lg:hidden"
+      routerLink="/"
     >
       Toram Online Web
     </div>
