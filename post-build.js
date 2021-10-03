@@ -2,8 +2,10 @@ const exec = require("child_process").exec;
 const fs = require("fs");
 const path = require("path");
 
+const outDirectory = process.env.OUT_DIR;
+
 // find the styles css file
-const files = getFilesFromPath("./dist", ".css");
+const files = getFilesFromPath(outDirectory, ".css");
 let data = [];
 
 if (!files && files.length <= 0) {
@@ -13,7 +15,7 @@ if (!files && files.length <= 0) {
 
 for (let f of files) {
   // get original file size
-  const originalSize = getFilesizeInKiloBytes("./dist/" + f) + "kb";
+  const originalSize = getFilesizeInKiloBytes(`${outDirectory}/${f}`) + "kb";
   var o = { file: f, originalSize: originalSize, newSize: "" };
   data.push(o);
 }
@@ -21,14 +23,15 @@ for (let f of files) {
 console.log("Run PurgeCSS...");
 
 exec(
-  "purgecss -css dist/*.css --content dist/index.html dist/*.js -o dist/",
+  `purgecss -css ${outDirectory}/*.css --content ${outDirectory}/index.html ${outDirectory}/*.js -o ${outDirectory}/`,
   function (error, stdout, stderr) {
     console.log("PurgeCSS done");
     console.log();
 
     for (let d of data) {
       // get new file size
-      const newSize = getFilesizeInKiloBytes("./dist/" + d.file) + "kb";
+      const newSize =
+        getFilesizeInKiloBytes(`${outDirectory}/${d.file}`) + "kb";
       d.newSize = newSize;
     }
 
