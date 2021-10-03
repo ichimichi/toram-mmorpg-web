@@ -15,11 +15,11 @@ export class AppMenuComponent implements OnInit {
     this.items = [
       {
         label: 'Character',
-        icon: 'pi pi-fw pi-user',
+        icon: 'fas fa-id-card',
         items: [
           {
             label: 'Stats',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-chart-bar',
             items: [
               {
                 label: 'Production',
@@ -40,7 +40,7 @@ export class AppMenuComponent implements OnInit {
           },
           {
             label: 'Skills',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-magic',
             items: [
               {
                 label: 'Combo',
@@ -61,15 +61,15 @@ export class AppMenuComponent implements OnInit {
           },
           {
             label: 'Equipment',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-child',
           },
           {
             label: 'Quest',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-flag',
           },
           {
             label: 'Switch Character',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-people-arrows',
             items: [
               {
                 label: 'Tank',
@@ -87,11 +87,11 @@ export class AppMenuComponent implements OnInit {
           },
           {
             label: 'Regislet',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-user-tag',
           },
           {
             label: 'Emblems',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-trophy',
             items: [
               {
                 label: 'Unreceived',
@@ -117,22 +117,22 @@ export class AppMenuComponent implements OnInit {
           },
           {
             label: 'Change App.',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-user-edit',
           },
         ],
       },
       {
         label: 'Items',
-        icon: 'pi pi-fw pi-briefcase',
+        icon: 'fas fa-briefcase',
       },
       {
         label: 'Map',
-        icon: 'pi pi-fw pi-map',
+        icon: 'fas fa-map-marked-alt',
         routerLink: '/map',
       },
       {
         label: 'Terminal',
-        icon: 'pi pi-fw pi-sitemap',
+        icon: 'fas fa-sitemap',
         items: [
           {
             label: 'Go to Land',
@@ -250,7 +250,7 @@ export class AppMenuComponent implements OnInit {
       },
       {
         label: 'News',
-        icon: 'pi pi-fw pi-globe',
+        icon: 'fas fa-newspaper',
         items: [
           {
             label: 'Official News',
@@ -268,11 +268,11 @@ export class AppMenuComponent implements OnInit {
       },
       {
         label: 'Orb Shop',
-        icon: 'pi pi-fw pi-shopping-cart',
+        icon: 'fas fa-store',
       },
       {
         label: 'Community',
-        icon: 'pi pi-fw pi-calendar',
+        icon: 'fas fa-calendar-week',
         items: [
           {
             label: 'Party',
@@ -374,7 +374,7 @@ export class AppMenuComponent implements OnInit {
       },
       {
         label: 'Settings',
-        icon: 'pi pi-fw pi-cog',
+        icon: 'fas fa-cogs',
         items: [
           {
             label: 'Shortcuts',
@@ -410,11 +410,11 @@ export class AppMenuComponent implements OnInit {
           },
           {
             label: 'Account',
-            icon: 'pi pi-fw pi-plus',
+            icon: 'fas fa-user-cog',
             items: [
               {
                 label: 'Logout',
-                icon: 'pi pi-fw pi-sign-out',
+                icon: 'fas fa-sign-out-alt',
                 routerLink: '/login',
               },
             ],
